@@ -78,9 +78,7 @@ The pin marked in green is the cathode of the LED. Follow the markings on the si
 
 The switches should stay in place on their own. But you can solder one pin to hold them in place.
 
-![](img/IMG_3461.png)
-
-![](img/IMG_3463.png)
+![](img/IMG_3461_combo.png)
 
 ### 5. Prep the pot and encoders.
 
