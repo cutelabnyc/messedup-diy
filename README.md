@@ -169,13 +169,13 @@ If you have a very early version of Messed Up, you'll need to add this 2-pin hea
 
 With your kit, we probably provided a right angle header. If you have a straight header, bend the pins so they don't press against the upper PCB.
 
-![](img/IMG_3490_combo.png)
+![](img/IMG_3490.png)
 
-![](img/IMG_3491_combo.png)
+![](img/IMG_3491.png)
 
-![](img/IMG_3493_combo.png)
+![](img/IMG_3493.png)
 
-![](img/IMG_3494_combo.png)
+![](img/IMG_3494.png)
 
 ### 14. Program the module.
 
@@ -185,7 +185,7 @@ Using a personal computer, the RP2040 chip that powers Messed Up can be programm
 ![](img/IMG_3540.png)
 2. Find the Boot and Ground pins, and attach a jumper to pull Boot to Ground. Now when the device is powered on, it's ready for programming.
 ![](img/IMG_3541.png)
-3. Connect the rear panel to Messed Up. 
+3. Connect the rear panel to Messed Up.
 4. Connect the Messed Up module to your computer using a USB cable. The USB cable is for data only and won't power the module, so you won't see anything on your computer yet.
 ![](img/IMG_3542.png)
 5. Connect the Messed Up module to 12v rack power. This can be a little tricky with the USB cable in place, but not too bad.
