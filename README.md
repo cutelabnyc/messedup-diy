@@ -28,9 +28,11 @@ Start with the smaller PCB and the two white pin sockets.
 
 ![](img/IMG_3442_comb.png)
 
-Make sure the side with an extra plastic ridge is facing towards the top of the PCB, where the USB connector is located.
+Both sides have a thin ridge in the plastic casing, but only one side has two thin lines in the ridge.
 
-The pin sockets are locking, and have polarity.
+The pin sockets are locking, and have polarity. Those thin lines must fit into the black shrouded headers in step 3.
+
+Make sure the side with the two thin lines is facing towards the top of the PCB, where the USB connector is located.
 
 ![](img/IMG_3444_combo.png)
 
@@ -38,7 +40,7 @@ The pin sockets are locking, and have polarity.
 
 For the display, we use a 16-pin (2x8) IC socket.
 
-Since the display is wider than a normal IC, break it in half first.
+Since the display is wider than a normal IC, break it in half first. Be careful not to break it too quickly or forcefully, or the part with pins might break too.
 
 ![](img/IMG_3452_comb.png)
 
@@ -82,11 +84,13 @@ The switches should stay in place on their own. But you can solder one pin to ho
 
 ### 5. Prep the pot and encoders.
 
-First, remove the washers and nuts.
+First, remove any washers and nuts.
 
-Then use a pair of pliers to trim off the small stability pin on top.
+On the potentiometer, use a pair of pliers to trim off the small stability pin on top. Make sure it's entirely removed, so the panel can sit flat against the pot. Otherwise it can cause other components to be mis-aligned.
 
-The small trimmer pot has not nut, washer, or stability pin.
+The encoders have stability pins too, but they don't need to be removed.
+
+The small trimmer pot has no nut, washer, or stability pin.
 
 ![](img/IMG_3464.png)
 
@@ -102,7 +106,7 @@ However, do not solder all pins until later (when the panel is added), or they c
 
 ### 7. Fit the jacks.
 
-This part can be a little tricky, because the jacks fit loosely. But it's best to avoid soldering them until the panel is added.
+This part can be a little tricky, because the jacks fit loosely. You might be tempted to solder a pin on each jack to keep them in place. Doing that will keep the jacks flush, but they can still be off-center. So it's best to avoid soldering them until the panel is added.
 
 The two shrouded pin headers should allow you to lay the PCB flat on the table while you insert the jacks.
 
