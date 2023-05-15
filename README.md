@@ -9,6 +9,9 @@ Your kit should contain:
 - 1 2x5 2.54mm pin header
 - 2 2x6 2mm locking pin headers
 - 2 2x6 2mm locking pin sockets
+- 1 2x6 2mm right-angle pin header
+- 4 digit 7 segment display
+- 1 2x8 2.5mm IC socket
 - 2 SPDT toggle switches
 - 2 pushbutton switches
 - 2 pushbutton encoders
@@ -18,6 +21,9 @@ Your kit should contain:
 - 10 jack nuts
 - 5 green LEDs
 - 2 yellow LEDs
+- 2 skirted encoder knobs (with caps)
+- 1 unskirted potentiometer knob (with cap)
+- 1 trimmer cap
 - 1 ribbon cable
 
 ## Building
