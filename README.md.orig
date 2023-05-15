@@ -44,9 +44,13 @@ Start with the smaller PCB and the two white pin sockets.
 
 Both sides have a thin ridge in the plastic casing, but only one side has two thin lines in the ridge.
 
+<<<<<<< HEAD
 The pin sockets are locking, and have polarity. Those thin lines must fit into the black shrouded headers in step 3.
 
 Make sure the side with the two thin lines is facing towards the top of the PCB, where the USB connector is located.
+=======
+The pin sockets are locking, and have polarity (orientation matters).
+>>>>>>> 8536542 (readme including notes about the pre-programmed back panel)
 
 ![](img/IMG_3444_combo.png)
 
@@ -217,10 +221,4 @@ Using a personal computer, the RP2040 chip that powers Messed Up can be programm
 ![](img/rpi-upload.png)
 8. Unpower your Messed Up and disconnect the USB cable.
 9. Remove the rear panel again and remove the jumper.
-10. Connect the rear panel again. You're ready to power on Messed Up. At this point, everything should work correctly. You can verify that the display works, that the encoders change the value of beats and divide, and that the LEDs illuminate correctly. The last step is to calibrate the inputs.
-
-## Calibrating
-
-Once Messed Up is assembled, the last step is to calibrate the inputs. Messed Up needs to record the voltage reading of each input when nothing is corrected, in order to establish a zero volt baseline. To calibrate Messed Up, first make sure that nothing is connected to any of Messed Up's inputs. Next, with Messed Up powered off, hold down both the Beat and the Divide encoder. With both encoders held down, power on the module (this can be a little tricky). Once the module powers on, keep the encoders held down until you see the module display "CALI". Once that happens you can let go of the encoders. Power the module off and then restart it. If everything worked correctly, you should see the module display 07:04, which means that all of the inputs are reading zero volts.
-
-Congratulations! Your Messed Up is ready.
+10. Connect the rear panel again. Your Messed Up is ready!
