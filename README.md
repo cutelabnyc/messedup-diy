@@ -1,6 +1,7 @@
 # messedup-diy
 DIY Build Instructions for Messed Up
 ![](img/IMG_3441.png)
+
 Your kit should contain:
 
 - 1 PCB layer 1
@@ -26,9 +27,16 @@ Your kit should contain:
 - 1 trimmer cap
 - 1 ribbon cable
 
+```
+In early kits, the rear PCB panel (the little one) may come
+pre-assembled.
+```
+
 ## Building
 
 ### 1. Interconnect pin sockets.
+
+In some of our earlier kits, the rear PCB will come pre-assembled, so you can skip this step.
 
 Start with the smaller PCB and the two white pin sockets.
 
@@ -188,6 +196,10 @@ With your kit, we probably provided a right angle header. If you have a straight
 ![](img/IMG_3494.png)
 
 ### 14. Program the module.
+
+```
+If your rear PCB came pre-assembled, your chip was already programmed, and you shouldn't need to program it.
+```
 
 Using a personal computer, the RP2040 chip that powers Messed Up can be programmed by mounting the drive as a disk and dropping in a file. The `upload` folder contains the `firmware.elf` and `firmware.uf2` files. You should only need `firmware.uf2`, but the elf file is provided too, in case you want it.
 
