@@ -28,8 +28,16 @@ Your kit should contain:
 - 1x ribbon cable
 
 ```
-In early kits, the rear PCB panel (the little one) may come
-pre-assembled.
+We've made a few PCB revisions to MessedUp since January 2023.
+You may see small differences in the SMD parts,
+and some may be added or missing. This is intentional.
+The THT parts are basically identical between versions,
+and any THT differences will be noted as they arise.
+```
+
+```
+In early kits (early-2023), the rear PCB (the little one)
+may come pre-assembled.
 ```
 
 ## Building
@@ -49,6 +57,8 @@ The pin sockets are locking, and have polarity. Those thin lines must fit into t
 Make sure the side with the two thin lines is facing towards the top of the PCB, where the USB connector is located.
 
 ![](img/IMG_3444_combo.png)
+
+On early PCBS, you might find
 
 ### 2. Display pin sockets.
 
@@ -76,7 +86,7 @@ To ensure they fit correctly, connect them to the bottom board before soldering.
 
 If you want, you can solder the power header (J13).
 
-However, we usually wait to the end, since the header can get in the way.
+However, we usually wait to the end, since the header can get in the way during the other steps.
 
 ![](img/IMG_3486.png)
 
@@ -90,9 +100,9 @@ But if you're worried about damaging it, wait until you've finished everything e
 
 These switches include an LED, which has a polarity.
 
-The pin marked in green is the cathode of the LED. Follow the markings on the silkscreen to place it correctly.
+The pin marked in green is the [cathode](img/led-polarity-diagram-20240328-2.png) of the LED. Follow the markings on the silkscreen to place it correctly.
 
-The switches should stay in place on their own. But you can solder one pin to hold them in place.
+The switches should stay in place on their own. But you can solder one pin to hold them in place if you prefer.
 
 ![](img/IMG_3461_combo.png)
 
@@ -104,7 +114,7 @@ On the potentiometer, use a pair of pliers to trim off the small stability pin o
 
 The encoders have stability pins too, but they don't need to be removed.
 
-The small trimmer pot has no nut, washer, or stability pin.
+The small, black-shaft trimmer pot has no nut, washer, or stability pin.
 
 ![](img/IMG_3464.png)
 
@@ -128,9 +138,13 @@ The two shrouded pin headers should allow you to lay the PCB flat on the table w
 
 ### 8. Fit the LEDs.
 
+**Be careful of LED orientation!** LEDs have a polarity, and will not work if connected backwards. Luckily, they won't be damaged if you do, so you can reverse them if you make the mistake. But it's easy to damage the board or parts while fixing the mistake, so it's best to get it right from the start.
+
 The cathode of the LED should be placed in the square hole on the PCB.
 
-LEDs have multiple polarity markings. Our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png) shows all of these. Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
+LEDs have multiple polarity markings, which are show in our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png). Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
+
+D1-D5 are green LEDs. D6 and D7 are yellow LEDs. You can use different color LEDs if you want, but the resistor values for each LED were chosen for the original colors, so the brightness will vary.
 
 ![](img/IMG_3477.png)
 
@@ -195,11 +209,14 @@ With your kit, we probably provided a right angle header. If you have a straight
 
 ![](img/IMG_3494.png)
 
-### 14. Program the module.
+### 14. Program the module (usually not necessary).
 
 ```
-If your rear PCB came pre-assembled, your chip was already programmed, and you shouldn't need to program it.
+If your rear PCB came pre-assembled, your chip was already programmed.
+So you don't need to program it.
 ```
+
+MessedUp modules marked Apr23 (April 2023) or earlier require eurorack power to be connected in order to to program, in addition to a USB cable. Modules with more recent dates can be programmed with only a USB cable.
 
 Using a personal computer, the RP2040 chip that powers Messed Up can be programmed by mounting the drive as a disk and dropping in a file. The `upload` folder contains the `firmware.elf` and `firmware.uf2` files. You should only need `firmware.uf2`, but the elf file is provided too, in case you want it.
 
@@ -219,7 +236,7 @@ Using a personal computer, the RP2040 chip that powers Messed Up can be programm
 9. Remove the rear panel again and remove the jumper.
 10. Connect the rear panel again. You're ready to power on Messed Up. At this point, everything should work correctly. You can verify that the display works, that the encoders change the value of beats and divide, and that the LEDs illuminate correctly. The last step is to calibrate the inputs.
 
-## Calibrating
+## Calibrate the module (necessary).
 
 Once Messed Up is assembled, the last step is to calibrate the inputs. Messed Up needs to record the voltage reading of each input when nothing is corrected, in order to establish a zero volt baseline. To calibrate Messed Up, first make sure that nothing is connected to any of Messed Up's inputs. Next, with Messed Up powered off, hold down both the Beat and the Divide encoder. With both encoders held down, power on the module (this can be a little tricky). Once the module powers on, keep the encoders held down until you see the module display "CALI". Once that happens you can let go of the encoders. Power the module off and then restart it. If everything worked correctly, you should see the module display 07:04, which means that all of the inputs are reading zero volts.
 
