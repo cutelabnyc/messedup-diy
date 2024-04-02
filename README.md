@@ -27,18 +27,17 @@ Your kit should contain:
 - 1x trimmer cap
 - 1x ribbon cable
 
-```
-We've made a few PCB revisions to MessedUp since January 2023.
+
+> [!TIP]
+> We've made a few PCB revisions to MessedUp since January 2023.
 You may see small differences in the SMD parts,
 and some may be added or missing. This is intentional.
 The THT parts are basically identical between versions,
 and any THT differences will be noted as they arise.
-```
 
-```
-In early kits (early-2023), the rear PCB (the little one)
+> [!NOTE]
+> In early kits (early-2023), the rear PCB (the little one)
 may come pre-assembled.
-```
 
 ## Building
 
