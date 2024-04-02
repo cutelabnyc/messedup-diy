@@ -128,9 +128,9 @@ The two shrouded pin headers should allow you to lay the PCB flat on the table w
 
 ### 8. Fit the LEDs.
 
-LEDs have multiple polarity markings. The flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
-
 The cathode of the LED should be placed in the square hole on the PCB.
+
+LEDs have multiple polarity markings. Our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png) shows all of these. Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
 
 ![](img/IMG_3477.png)
 
