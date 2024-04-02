@@ -26,7 +26,7 @@ Your kit should contain:
 - 1x trimmer cap
 - 1x ribbon cable
 
-Kits from April 2023 onwards also contain:
+Kits from August 2023 onwards also contain:
 - 1x 2x6 2mm right-angle pin header
 
 > [!TIP]
@@ -79,6 +79,12 @@ To ensure they fit correctly, connect them to the bottom board before soldering.
 ![](img/IMG_3457.png)
 
 ![](img/IMG_3459.png)
+
+### Optional: Solder the expander header.
+
+If you want, you can solder the expander header (J17). However, this header currently has no functionality ;)
+
+The expander header uses a straight connector with 12 positions (two rows of six). The pins are spaced 2.0mm apart. The power header uses a wider pin spacing, preventing it from being soldered here accidentally.
 
 ### Optional: Solder the power header.
 
@@ -219,7 +225,7 @@ With your kit, we probably provided a right angle header. If you have a straight
 > If your rear PCB came pre-assembled, your chip was already programmed. So you don't need to program it.
 
 > [!IMPORTANT]
-> MessedUp modules marked Apr23 (April 2023) or earlier require eurorack power to be connected in order to to program, in addition to a USB cable. Modules with more recent dates can be programmed with only a USB cable.
+> MessedUp modules marked Aug23 (August 2023) or earlier require eurorack power to be connected in order to to program, in addition to a USB cable. Modules with more recent dates can be programmed with only a USB cable.
 
 Using a personal computer, the RP2040 chip that powers Messed Up can be programmed by mounting the drive as a disk and dropping in a file. The `upload` folder contains the `firmware.elf` and `firmware.uf2` files. You should only need `firmware.uf2`, but the elf file is provided too, in case you want it.
 
