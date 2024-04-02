@@ -4,28 +4,28 @@ DIY Build Instructions for Messed Up
 
 Your kit should contain:
 
-- 1 PCB layer 1
-- 1 PCB layer 2
-- 1 Messed Up aluminum face panel
-- 1 2x5 2.54mm pin header
-- 2 2x6 2mm locking pin headers
-- 2 2x6 2mm locking pin sockets
-- 1 2x6 2mm right-angle pin header
-- 4 digit 7 segment display
-- 1 2x8 2.5mm IC socket
-- 2 SPDT toggle switches
-- 2 pushbutton switches
-- 2 pushbutton encoders
-- 1 9mm D-shaft potentiometer
-- 1 9mm trimmer potentiometer
-- 10 PJ398 jacks ("Thonkiconn")
-- 10 jack nuts
-- 5 green LEDs
-- 2 yellow LEDs
-- 2 skirted encoder knobs (with caps)
-- 1 unskirted potentiometer knob (with cap)
-- 1 trimmer cap
-- 1 ribbon cable
+- 1x PCB layer 1
+- 1x PCB layer 2
+- 1x Messed Up aluminum face panel
+- 1x 2x5 2.54mm pin header
+- 2x 2x6 2mm locking pin headers
+- 2x 2x6 2mm locking pin sockets
+- 1x 2x6 2mm right-angle pin header
+- 4x digit 7 segment display
+- 1x 2x8 2.5mm IC socket
+- 2x SPDT toggle switches
+- 2x pushbutton switches
+- 2x pushbutton encoders
+- 1x 9mm D-shaft potentiometer
+- 1x 9mm trimmer potentiometer
+- 10x PJ398 jacks ("Thonkiconn")
+- 10x jack nuts
+- 5x green LEDs
+- 2x yellow LEDs
+- 2x skirted encoder knobs (with caps)
+- 1x unskirted potentiometer knob (with cap)
+- 1x trimmer cap
+- 1x ribbon cable
 
 ```
 In early kits, the rear PCB panel (the little one) may come
