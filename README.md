@@ -97,7 +97,8 @@ But if you're worried about damaging it, wait until you've finished everything e
 
 ### 5. Fit the pushbutton switches.
 
-These switches include an LED, which has a polarity.
+> [!NOTE]
+> These switches include an LED, which has a polarity.
 
 The pin marked in green is the [cathode](img/led-polarity-diagram-20240328-2.png) of the LED. Follow the markings on the silkscreen to place it correctly.
 
@@ -137,7 +138,10 @@ The two shrouded pin headers should allow you to lay the PCB flat on the table w
 
 ### 8. Fit the LEDs.
 
-**Be careful of LED orientation!** LEDs have a polarity, and will not work if connected backwards. Luckily, they won't be damaged if you do, so you can reverse them if you make the mistake. But it's easy to damage the board or parts while fixing the mistake, so it's best to get it right from the start.
+> [!NOTE]
+> Be careful of LED orientation!
+
+LEDs have a polarity, and will not work if connected backwards. Luckily, they won't be damaged if you do, so you can reverse them if you make the mistake. But it's easy to damage the board or parts while fixing the mistake, so it's best to get it right from the start.
 
 The cathode of the LED should be placed in the square hole on the PCB.
 
