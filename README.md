@@ -10,7 +10,6 @@ Your kit should contain:
 - 1x 2x5 2.54mm pin header
 - 2x 2x6 2mm locking pin headers
 - 2x 2x6 2mm locking pin sockets
-- 1x 2x6 2mm right-angle pin header
 - 4x digit 7 segment display
 - 1x 2x8 2.5mm IC socket
 - 2x SPDT toggle switches
@@ -27,13 +26,13 @@ Your kit should contain:
 - 1x trimmer cap
 - 1x ribbon cable
 
+Kits from April 2023 onwards also contain:
+- 1x 2x6 2mm right-angle pin header
 
 > [!TIP]
 > We've made a few PCB revisions to MessedUp since January 2023.
-You may see small differences in the SMD parts,
-and some may be added or missing. This is intentional.
-The THT parts are basically identical between versions,
-and any THT differences will be noted as they arise.
+You may see small differences in the SMD parts, and some may be added or missing. This is intentional.
+The THT parts are basically identical between versions, and any THT differences will be noted as they arise.
 
 > [!NOTE]
 > In early kits (early-2023), the rear PCB (the little one)
@@ -87,6 +86,8 @@ If you want, you can solder the power header (J13).
 
 However, we usually wait to the end, since the header can get in the way during the other steps.
 
+The power header is the a straight connector with 10 positions (two rows of five). The pins are spaced 2.54mm apart. More recent kits also contain a right angle header. The right angle header uses a smaller 2.0mm pin spacing, preventing it from being used for power accidentally.
+
 ![](img/IMG_3486.png)
 
 ### 4. Place the display in the socket.
@@ -97,7 +98,7 @@ But if you're worried about damaging it, wait until you've finished everything e
 
 ### 5. Fit the pushbutton switches.
 
-> [!NOTE]
+> [!IMPORTANT]
 > These switches include an LED, which has a polarity.
 
 The pin marked in green is the [cathode](img/led-polarity-diagram-20240328-2.png) of the LED. Follow the markings on the silkscreen to place it correctly.
@@ -138,7 +139,7 @@ The two shrouded pin headers should allow you to lay the PCB flat on the table w
 
 ### 8. Fit the LEDs.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Be careful of LED orientation!
 
 LEDs have a polarity, and will not work if connected backwards. Luckily, they won't be damaged if you do, so you can reverse them if you make the mistake. But it's easy to damage the board or parts while fixing the mistake, so it's best to get it right from the start.
@@ -214,12 +215,11 @@ With your kit, we probably provided a right angle header. If you have a straight
 
 ### 14. Program the module (usually not necessary).
 
-```
-If your rear PCB came pre-assembled, your chip was already programmed.
-So you don't need to program it.
-```
+> [!NOTE]
+> If your rear PCB came pre-assembled, your chip was already programmed. So you don't need to program it.
 
-MessedUp modules marked Apr23 (April 2023) or earlier require eurorack power to be connected in order to to program, in addition to a USB cable. Modules with more recent dates can be programmed with only a USB cable.
+> [!IMPORTANT]
+> MessedUp modules marked Apr23 (April 2023) or earlier require eurorack power to be connected in order to to program, in addition to a USB cable. Modules with more recent dates can be programmed with only a USB cable.
 
 Using a personal computer, the RP2040 chip that powers Messed Up can be programmed by mounting the drive as a disk and dropping in a file. The `upload` folder contains the `firmware.elf` and `firmware.uf2` files. You should only need `firmware.uf2`, but the elf file is provided too, in case you want it.
 
