@@ -113,7 +113,7 @@ The switches should stay in place on their own. But you can solder one pin to ho
 
 ![](img/IMG_3461_combo.png)
 
-### 5. Prep the pot and encoders.
+### 6A. Prep the pot and encoders.
 
 First, remove any washers and nuts.
 
@@ -127,7 +127,7 @@ The small, black-shaft trimmer pot has no nut, washer, or stability pin.
 
 ![](img/IMG_3469.png)
 
-### 6. Fit the pots, encoders, and toggle switches.
+### 6B. Fit the pots, encoders, and toggle switches.
 
 As with the buttons, you can solder one leg of each if you like.
 
