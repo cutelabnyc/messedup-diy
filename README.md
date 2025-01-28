@@ -56,8 +56,6 @@ Make sure the side with the two thin lines is facing towards the top of the PCB,
 
 ![](img/IMG_3444_combo.png)
 
-On early PCBS, you might find
-
 ### 2. Display pin sockets.
 
 For the display, we use a 16-pin (2x8) IC socket.
@@ -92,7 +90,7 @@ If you want, you can solder the power header (J13).
 
 However, we usually wait to the end, since the header can get in the way during the other steps.
 
-The power header is the a straight connector with 10 positions (two rows of five). The pins are spaced 2.54mm apart. More recent kits also contain a right angle header. The right angle header uses a smaller 2.0mm pin spacing, preventing it from being used for power accidentally.
+The power header is the straight connector with 10 positions (two rows of five). The pins are spaced 2.54mm apart. More recent kits also contain a right angle header. The right angle header uses a smaller 2.0mm pin spacing, preventing it from being used for power accidentally.
 
 ![](img/IMG_3486.png)
 
@@ -205,11 +203,11 @@ The pots and encoders are D-shaft, so you simply need to press down on the knobs
 
 ![](img/IMG_3495_combo.png)
 
-### 13. Add the jumper.
+### 13. Add the jumper (no longer necessary).
 
-If you have a very early version of Messed Up, you'll need to add this 2-pin header and jumper in order to program the module.
+If you have a very early version of Messed Up, you'll need to add this 2-pin header and jumper. In revisions since April 2023, this jumper is replaced by a small button. If your kit does not include a jumper, you can safely assume it's not needed. 
 
-With your kit, we probably provided a right angle header. If you have a straight header, bend the pins so they don't press against the upper PCB.
+If your kit includes a 2-pin header, it's most likely a right angle header. If you have a straight header, bend the pins at a so they don't press against the upper PCB when the two PCBs are connected.
 
 ![](img/IMG_3490.png)
 
@@ -219,10 +217,18 @@ With your kit, we probably provided a right angle header. If you have a straight
 
 ![](img/IMG_3494.png)
 
-### 14. Program the module (usually not necessary).
+### 14. Program the module (not necessary for kits).
+
+### 15. Calibrate the module (necessary).
+
+Once Messed Up is assembled, the last step is to calibrate the inputs. Messed Up needs to record the voltage reading of each input when nothing is corrected, in order to establish a zero volt baseline. To calibrate Messed Up, first make sure that nothing is connected to any of Messed Up's inputs. Next, with Messed Up powered off, hold down both the Beat and the Divide encoder. With both encoders held down, power on the module (this can be a little tricky). Once the module powers on, keep the encoders held down until you see the module display "CALI". Once that happens you can let go of the encoders. Power the module off and then restart it. If everything worked correctly, you should see the module display 07:04, which means that all of the inputs are reading zero volts.
+
+Congratulations! Your Messed Up is ready to make sound odd rhythms :)
+
+## Programming Guide.
 
 > [!NOTE]
-> If your rear PCB came pre-assembled, your chip was already programmed. So you don't need to program it.
+> The PCBs in our kits come with firmware installed, so it's not necessary to program them. This guide is only provided in case you want to update your module to the latest firmware, or if you want to upload your own modifications of the stock firmware.
 
 > [!IMPORTANT]
 > MessedUp modules marked Aug23 (August 2023) or earlier require eurorack power to be connected in order to to program, in addition to a USB cable. Modules with more recent dates can be programmed with only a USB cable.
@@ -244,9 +250,3 @@ Using a personal computer, the RP2040 chip that powers Messed Up can be programm
 8. Unpower your Messed Up and disconnect the USB cable.
 9. Remove the rear panel again and remove the jumper.
 10. Connect the rear panel again. You're ready to power on Messed Up. At this point, everything should work correctly. You can verify that the display works, that the encoders change the value of beats and divide, and that the LEDs illuminate correctly. The last step is to calibrate the inputs.
-
-## Calibrate the module (necessary).
-
-Once Messed Up is assembled, the last step is to calibrate the inputs. Messed Up needs to record the voltage reading of each input when nothing is corrected, in order to establish a zero volt baseline. To calibrate Messed Up, first make sure that nothing is connected to any of Messed Up's inputs. Next, with Messed Up powered off, hold down both the Beat and the Divide encoder. With both encoders held down, power on the module (this can be a little tricky). Once the module powers on, keep the encoders held down until you see the module display "CALI". Once that happens you can let go of the encoders. Power the module off and then restart it. If everything worked correctly, you should see the module display 07:04, which means that all of the inputs are reading zero volts.
-
-Congratulations! Your Messed Up is ready.
